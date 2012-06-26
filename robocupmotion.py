@@ -1526,9 +1526,9 @@ def standUp():
 def stiff():
     if motProxy.getStiffnesses('HeadPitch') != 0:
         motProxy.setStiffnesses(['RArm', 'LArm', 'LLeg', 'RLeg', 'Head'],
-        [0.6, 0.6, 0.6, 0.6,0.6,0.6,0.6,0.6, 
+        [0.6,  0.6,  0.6,  0.6,  0.6,  0.6,  0.6, 0.6, 
          0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 
-         0.95, 0.95, 0.95,0.95,0.95,0.95, 0.6,0.6])
+         0.95, 0.95, 0.95, 0.95, 0.95, 0.95, 0.6, 0.6])
     
 # set stiffness for knees again
 def stiffKnees():
