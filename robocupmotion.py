@@ -2,9 +2,10 @@
 from naoqi import ALProxy
 import time
 import math
+import config
 
-motProxy = ALProxy('ALMotion', '192.168.1.24', 9559)
-posProxy = ALProxy('ALRobotPose', '192.168.1.24', 9559)
+motProxy = config.loadProxy('ALMotion')
+posProxy = config.loadProxy('ALRobotPose')
 
 '''
 All motions are to be specified here in alphabetical order:
