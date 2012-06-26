@@ -1,7 +1,7 @@
 import motion
 from naoqi import ALProxy
 
-IP = "127.0.0.1" # set your Ip adress here
+IP = "127.0.0.1"
 
 PORT = 9559
 
@@ -20,21 +20,21 @@ def loadProxy(pName):
   print "---------------------"
   return proxy
 
-def StiffnessOn(proxy):
+def stiffnessOn(proxy):
   #We use the "Body" name to signify the collection of all joints
   pNames = "Body"
   pStiffnessLists = 1.0
   pTimeLists = 1.0
   proxy.stiffnessInterpolation(pNames, pStiffnessLists, pTimeLists)
 
-def StiffnessOff(proxy):
+def stiffnessOff(proxy):
   #We use the "Body" name to signify the collection of all joints
   pNames = "Body"
   pStiffnessLists = 0.0
   pTimeLists = 1.0
   proxy.stiffnessInterpolation(pNames, pStiffnessLists, pTimeLists)
 
-def PoseInit(proxy, pMaxSpeedFraction = 0.2):
+def poseInit(proxy, pMaxSpeedFraction = 0.2):
   # Define The Initial Position
   HeadYawAngle       = 0
   HeadPitchAngle     = 0
