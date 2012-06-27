@@ -20,7 +20,7 @@ angles.append(
  -1.1565940380096436,
  -1.2823820114135742]
 )
-times.append(factor([0.1, 1.1, 2.1, 3.1, 4.1, 5.1], f))
+times.append(factor([1, 2, 3, 4, 5, 6], f))
 
 names.append('LKneePitch')
 angles.append(
@@ -31,7 +31,7 @@ angles.append(
  1.9051860570907593,
  2.112546443939209,
  2.112546443939209])
-times.append(factor([0.1, 0.96, 1.82, 2.68, 3.54, 4.4, 5.26], f))
+times.append(factor([0.85,1.71,2.57,3.42,4.28,5.14,6.00], f))
 
 names.append('LAnklePitch')
 angles.append(
@@ -42,7 +42,7 @@ angles.append(
  -0.9772000312805176,
  -1.018618106842041]
 )
-times.append(factor([0.1, 1.1, 2.1, 3.1, 4.1, 5.1], f))
+times.append(factor([1, 2, 3, 4, 5, 6], f))
 
 names.append('LAnkleRoll')
 angles.append(
@@ -53,7 +53,7 @@ angles.append(
  0.11202406883239746,
  0.10281991958618164]
 )
-times.append(factor([0.1, 1.1, 2.1, 3.1, 4.1, 5.1], f))
+times.append(factor([1, 2, 3, 4, 5, 6], f))
 
 names.append('LHipRoll')
 angles.append(
@@ -63,7 +63,7 @@ angles.append(
  0.3988819122314453,
  0.6075060367584229]
 )
-times.append(factor([0.1, 1.6, 3.1, 4.6], f))
+times.append(factor([1.2, 2.4, 3.6, 4.8, 6.0], f))
 
 
 motion.angleInterpolation(names, angles, times, True)
