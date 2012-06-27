@@ -5,7 +5,7 @@ def factor(list, f):
 
 motion = config.loadProxy("ALMotion")
 
-f = .5
+f = 0.5
 
 names = list()
 angles = list()
