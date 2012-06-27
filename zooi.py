@@ -1,5 +1,6 @@
 import config
 import robocupmotion
 
-robocupmotion.standUp()
+mp = config.loadProxy("ALMotion")
 
+print mp.getRobotConfig()
