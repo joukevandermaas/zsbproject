@@ -4,13 +4,23 @@ import almath
 import sys
 import time
 
-def main(effector):
+def main(effector, file):
     motionProxy = config.loadProxy("ALMotion")
+
+    output(str(motionProxy.getAngles(effector, True)), file)
     
-    while raw_input('------\n') != 'q':
-        print motionProxy.getAngles(effector, True)
+    motionProxy.setStiffnesses(effector, 0.0)
+    while raw_input('') != 'q':
+        output(str(motionProxy.getAngles(effector, True)), file)
+
+def output(text, file):
+    print text
+    file.write(text + '\n')
 
 
-effector = "Body" if len(sys.argv) == 1 else sys.argv[1]
+effector = sys.argv[1]
+filename = sys.argv[2]
+
+file = open(filename, 'w')
 if __name__ == "__main__":
-    main(effector)
+    main(effector, file)
