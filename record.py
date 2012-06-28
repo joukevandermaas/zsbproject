@@ -9,7 +9,7 @@ def main(effector, file):
 
     output(str(motionProxy.getAngles(effector, True)), file)
     
-    motionProxy.setStiffnesses(effector, 0.0)
+    #motionProxy.setStiffnesses(effector, 0.0)
     while raw_input('<Enter> to record; <q> to quit. ') != 'q':
         output(str(motionProxy.getAngles(effector, True)), file)
 

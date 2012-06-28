@@ -1,7 +1,7 @@
 import motion
 from naoqi import ALProxy
 
-IP = "192.168.1.35"
+IP = "192.168.1.18"
 
 PORT = 9559
 
@@ -9,6 +9,9 @@ if (IP == ""):
   print "IP address not defined, aborting"
   print "Please define it in " + __file__
   exit(1)
+
+def factor(list, f):
+    return [f*x for x in list]
 
 def loadProxy(pName):
   print "---------------------"
@@ -23,7 +26,7 @@ def loadProxy(pName):
 def stiffnessOn(proxy):
   #We use the "Body" name to signify the collection of all joints
   pNames = "Body"
-  pStiffnessLists = 1.0
+  pStiffnessLists = 0.6
   pTimeLists = 1.0
   proxy.stiffnessInterpolation(pNames, pStiffnessLists, pTimeLists)
 
