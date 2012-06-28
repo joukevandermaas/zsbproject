@@ -255,13 +255,11 @@ def kick():
     0.808459997177124,
     0.5568840503692627,
     0.3467259407043457,
-    0.400,
-    0.346,
     0.556,
     0.808,
     1.076]
     )
-    times.append(factor([1,2,3,4,5,6,7,8,9], f))
+    times.append(factor([1,2,3,4,5,6,7], f))
 
     names.append('RShoulderRoll')
     angles.append(
