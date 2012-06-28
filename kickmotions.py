@@ -10,6 +10,8 @@ liftArms:         lifts the robot's arms so he can hold the ball.
 kick:             drops the ball and kicks it.
 
 '''
+def factor(list, f):
+    return [f*x for x in list]
 
 def positionLeftLeg():
     f = 0.5
