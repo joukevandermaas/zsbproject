@@ -1,4 +1,5 @@
 import robocupmotion
 
-robocupmotion.standUp()
+m = robocupmotion.Motions()
+m.standUp()
 
