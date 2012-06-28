@@ -243,7 +243,7 @@ def liftArms():
     motion.angleInterpolation(names, angles, times, True)
 
 def kick():
-    f = .07
+    f = .05
 
     names = list()
     angles = list()
@@ -254,11 +254,12 @@ def kick():
     [1.0769100189208984,
     0.808459997177124,
     0.5568840503692627,
-    0.3467259407043457]
-    #0.09975194931030273,
-    #-0.09232791513204575]
+    0.3467259407043457,
+    0.556,
+    0.808,
+    1.076]
     )
-    times.append(factor([1,2,3,4], f))
+    times.append(factor([1,2,3,4,5,6,7], f))
 
     names.append('RShoulderRoll')
     angles.append(
@@ -268,5 +269,5 @@ def kick():
     times.append(factor([1.05,3],f))
 
     motion.angleInterpolation(names, angles, times, True)
-    config.stiffnessOff(motion)
+#    config.stiffnessOff(motion)
 
