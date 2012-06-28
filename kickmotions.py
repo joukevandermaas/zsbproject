@@ -77,8 +77,8 @@ def positionLeftLeg():
     names.append('HeadPitch')
     angles.append(
     [-0.1304318904876709,
-    -0.37126994132995605,
-    -0.6719517707824707]
+     -0.37126994132995605,
+     -0.6719517707824707]
     )
     times.append(factor([2,4,6], f))
 
@@ -243,7 +243,7 @@ def liftArms():
     motion.angleInterpolation(names, angles, times, True)
 
 def kick():
-    f = .05
+    f = .07
 
     names = list()
     angles = list()
@@ -255,11 +255,13 @@ def kick():
     0.808459997177124,
     0.5568840503692627,
     0.3467259407043457,
+    0.400,
+    0.346,
     0.556,
     0.808,
     1.076]
     )
-    times.append(factor([1,2,3,4,5,6,7], f))
+    times.append(factor([1,2,3,4,5,6,7,8,9], f))
 
     names.append('RShoulderRoll')
     angles.append(
@@ -269,5 +271,6 @@ def kick():
     times.append(factor([1.05,3],f))
 
     motion.angleInterpolation(names, angles, times, True)
+    config.poseInit(motion)
 #    config.stiffnessOff(motion)
 
