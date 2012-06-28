@@ -61,10 +61,17 @@ angles.append(
  0.1565098762512207,
  0.3037738800048828,
  0.3988819122314453,
- 0.6075060367584229]
+ 0.5575060367584229]
 )
 times.append(factor([1.2, 2.4, 3.6, 4.8, 6.0], f))
 
+names.append('HeadPitch')
+angles.append(
+[-0.1304318904876709,
+ -0.37126994132995605,
+ -0.6719517707824707]
+)
+times.append(factor([2,4,6], f))
 
 motion.angleInterpolation(names, angles, times, True)
 

@@ -19,7 +19,7 @@ def output(text, file):
 
 
 effector = sys.argv[1]
-filename = effector + ".txt"
+filename = "data/" + effector + ".txt"
 
 file = open(filename, 'w')
 if __name__ == "__main__":
