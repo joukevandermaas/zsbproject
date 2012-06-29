@@ -1,7 +1,16 @@
-# **dokick.py**
-#Performs all movements needed to do a kick. Run right after standup.py. 
-#You will be prompted to give the robot the ball.
-#Written by Jouke van der Maas, Koen Keune, Marysia Winkels, Wessel Klijnsma
+'''
+Nao Goal Kick
+
+Wessel Klijnsma - 10172432 
+Marysia Winkels - 10163727 
+Koen Keune - 10003527 
+Jouke van der Maas - 10186883
+
+**dokick.py**
+Performs all movements needed to do a kick. Run right after standup.py. 
+You will be prompted to give the robot the ball.
+
+'''
 
 import kickmotions
 import config

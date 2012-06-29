@@ -1,6 +1,15 @@
-#Authors: Jouke van der Maas, Koen Keune, Marysia Winkels, Wessel Klijnsma
-# **robocupmotion.py**
-#Defines additional movements. This file was written by the Dutch Nao Team.
+'''
+Nao Goal Kick
+
+Wessel Klijnsma - 10172432 
+Marysia Winkels - 10163727 
+Koen Keune - 10003527 
+Jouke van der Maas - 10186883
+
+**robocupmotion.py**
+Defines additional movements. This file was written by the Dutch Nao Team.
+
+'''
 
 import time
 import math

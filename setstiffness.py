@@ -1,8 +1,17 @@
-#**setstiffness.py**
-#Sets the stiffness of a joint or joint group. Useful when testing or recording using record.py, 
-#to move certain limbs around. It requires two command line arguments: the joint or joint group 
-#to set and the stiffness (from 0.0 to 1.0) to give it.
-#Written by Jouke van der Maas, Koen Keune, Marysia Winkels, Wessel Klijnsma
+'''
+Nao Goal Kick
+
+Wessel Klijnsma - 10172432 
+Marysia Winkels - 10163727 
+Koen Keune - 10003527 
+Jouke van der Maas - 10186883
+
+**setstiffness.py**
+Sets the stiffness of a joint or joint group. Useful when testing or recording using record.py, 
+to move certain limbs around. It requires two command line arguments: the joint or joint group 
+to set and the stiffness (from 0.0 to 1.0) to give it.
+
+'''
 
 import config
 import motion

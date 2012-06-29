@@ -1,8 +1,17 @@
-# **config.py**
-#Defines configuration options to make the other scripts simpler. 
-#The ip-address of the Nao is read from here and used by all other scripts (including robocupmotion.py). 
-#This file was written by Aldabaran.
+'''
+Nao Goal Kick
 
+Wessel Klijnsma - 10172432 
+Marysia Winkels - 10163727 
+Koen Keune - 10003527 
+Jouke van der Maas - 10186883
+
+**config.py**
+Defines configuration options to make the other scripts simpler. 
+The ip-address of the Nao is read from here and used by all other scripts (including robocupmotion.py). 
+This file was written by Aldabaran.
+
+'''
 import motion
 from naoqi import ALProxy
 

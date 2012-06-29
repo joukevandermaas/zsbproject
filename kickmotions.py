@@ -1,12 +1,14 @@
-#- **kickmotions.py**
-#Defines the different moves the Nao needs to perform the kick.
-#Written by Jouke van der Maas, Koen Keune, Marysia Winkels, Wessel Klijnsma
-
-import config
-
-motion = config.loadProxy('ALMotion')
-
 '''
+Nao Goal Kick
+
+Wessel Klijnsma - 10172432 
+Marysia Winkels - 10163727 
+Koen Keune - 10003527 
+Jouke van der Maas - 10186883
+
+**kickmotions.py**
+Defines the different moves the Nao needs to perform the kick.
+
 positionLeftLeg:  initial step, positions the left leg of the robot so the right leg can
                   move freely.
 positionRightLeg: positions the right leg to make the kick.
@@ -14,6 +16,10 @@ liftArms:         lifts the robot's arms so he can hold the ball.
 kick:             drops the ball and kicks it.
 
 '''
+import config
+
+motion = config.loadProxy('ALMotion')
+
 def factor(list, f):
     return [f*x for x in list]
 
