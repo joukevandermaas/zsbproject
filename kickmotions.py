@@ -1,3 +1,7 @@
+#- **kickmotions.py**
+#Defines the different moves the Nao needs to perform the kick.
+#Written by Jouke van der Maas, Koen Keune, Marysia Winkels, Wessel Klijnsma
+
 import config
 
 motion = config.loadProxy('ALMotion')

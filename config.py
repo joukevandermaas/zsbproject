@@ -1,7 +1,12 @@
+# **config.py**
+#Defines configuration options to make the other scripts simpler. 
+#The ip-address of the Nao is read from here and used by all other scripts (including robocupmotion.py). 
+#This file was written by Aldabaran.
+
 import motion
 from naoqi import ALProxy
 
-IP = "192.168.1.18"
+IP = "192.168.1.10"
 
 PORT = 9559
 

@@ -1,3 +1,7 @@
+#Authors: Jouke van der Maas, Koen Keune, Marysia Winkels, Wessel Klijnsma
+# **robocupmotion.py**
+#Defines additional movements. This file was written by the Dutch Nao Team.
+
 import time
 import math
 import almath
